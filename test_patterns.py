@@ -13,7 +13,6 @@ from patterns import (
 
 
 def capture(func, *args):
-    """Helper to capture printed output from a pattern function."""
     captured = StringIO()
     sys.stdout = captured
     func(*args)

@@ -29,6 +29,8 @@ git clone https://github.com/lebs-M/pattern-generator.git
 # Navigate into the project folder
 cd pattern-generator
 
+# Install dependencies
+pip install -r requirements.txt
 
 # Run the program
 python main.py
@@ -61,8 +63,11 @@ Enter a symbol to use (default is *):
 
 ## Running Tests
 
+Make sure to install dependencies first:
+
 ```bash
-pytest tests/
+pip install -r requirements.txt
+python -m pytest test_patterns.py
 ```
 
 ---
